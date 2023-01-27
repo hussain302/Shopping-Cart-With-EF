@@ -1,0 +1,104 @@
+html {
+  font-size: 14px;
+}
+
+@media (min-width: 768px) {
+  html {
+    font-size: 16px;
+  }
+}
+
+html {
+  position: relative;
+  min-height: 100%;
+}
+
+body {
+  margin-bottom: 60px;
+}
+
+
+.glow {
+    /*font-size: 80px;*/
+    color: #000000;
+    animation: glow 1s ease-in-out infinite alternate;
+}
+
+@-webkit-keyframes glow {
+    from {
+        text-shadow: 0 0 10px #Ffd700, 0 0 70px #e60073;
+    }
+
+    to {
+        text-shadow: 0 0 2px #fff, 0 0 3px #Ffd700, 0 0 4px #ffd800, 0 0 5px #ffffff, 0 0 6px #ff4da6, 0 0 7px #0094ff, 0 0 1px #ff6a00;
+    }
+}
+
+
+.fas {
+    font-size: 22px;
+}
+
+.toogle {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+    background-color: #f5f6fa;
+    padding: 15px 30px;
+    border-radius: 4px;
+    min-width: 500px;
+}
+
+.toogle-deails {
+    flex-direction: column;
+    padding-left: 25px;
+    padding-right: 25px;
+    width: 90%;
+}
+
+.success {
+    border-left: 3px solid #44bd32;
+}
+
+    .success .fas:nth-child(1) {
+        color: #44bd32;
+    }
+
+.danger {
+    border-left: 3px solid #ff6348;
+}
+
+    .danger .fas:nth-child(1) {
+        color: #ff6348;
+    }
+
+.info {
+    border-left: 3px solid #1e90ff;
+}
+
+    .info .fas:nth-child(1) {
+        color: #1e90ff;
+    }
+
+.close {
+    font-size: 24px;
+    cursor: pointer;
+    color: #a4b0be;
+}
+
+@media(max-width: 600px) {
+    .container {
+        margin: 0 20px;
+    }
+
+    .toogle {
+        min-width: 200px;
+        text-align: center;
+        padding: 12px 18px;
+    }
+
+    .toogle-deails {
+        padding-left: 15px;
+        padding-right: 15px;
+    }
+}

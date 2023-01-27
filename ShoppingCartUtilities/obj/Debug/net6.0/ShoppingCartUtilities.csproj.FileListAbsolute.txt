@@ -1,0 +1,12 @@
+D:\Dotnet Practices\Dotnet Projects\ShoppingCart\ShoppingCartUtilities\bin\Debug\net6.0\ShoppingCartUtilities.deps.json
+D:\Dotnet Practices\Dotnet Projects\ShoppingCart\ShoppingCartUtilities\bin\Debug\net6.0\ShoppingCartUtilities.dll
+D:\Dotnet Practices\Dotnet Projects\ShoppingCart\ShoppingCartUtilities\bin\Debug\net6.0\ShoppingCartUtilities.pdb
+D:\Dotnet Practices\Dotnet Projects\ShoppingCart\ShoppingCartUtilities\obj\Debug\net6.0\ShoppingCartUtilities.csproj.AssemblyReference.cache
+D:\Dotnet Practices\Dotnet Projects\ShoppingCart\ShoppingCartUtilities\obj\Debug\net6.0\ShoppingCartUtilities.GeneratedMSBuildEditorConfig.editorconfig
+D:\Dotnet Practices\Dotnet Projects\ShoppingCart\ShoppingCartUtilities\obj\Debug\net6.0\ShoppingCartUtilities.AssemblyInfoInputs.cache
+D:\Dotnet Practices\Dotnet Projects\ShoppingCart\ShoppingCartUtilities\obj\Debug\net6.0\ShoppingCartUtilities.AssemblyInfo.cs
+D:\Dotnet Practices\Dotnet Projects\ShoppingCart\ShoppingCartUtilities\obj\Debug\net6.0\ShoppingCartUtilities.csproj.CoreCompileInputs.cache
+D:\Dotnet Practices\Dotnet Projects\ShoppingCart\ShoppingCartUtilities\obj\Debug\net6.0\ShoppingCartUtilities.dll
+D:\Dotnet Practices\Dotnet Projects\ShoppingCart\ShoppingCartUtilities\obj\Debug\net6.0\refint\ShoppingCartUtilities.dll
+D:\Dotnet Practices\Dotnet Projects\ShoppingCart\ShoppingCartUtilities\obj\Debug\net6.0\ShoppingCartUtilities.pdb
+D:\Dotnet Practices\Dotnet Projects\ShoppingCart\ShoppingCartUtilities\obj\Debug\net6.0\ref\ShoppingCartUtilities.dll

@@ -1,0 +1,23 @@
+﻿@if (TempData["Error"] != null)
+{
+        <div class="toogle danger">
+            <i class='fas fa-exclamation-circle'></i>
+            <div class="toogle-deails">
+                <h5>Error:</h5>
+                <p>@TempData["Error"]</p>
+            </div>
+            <i class='fas fa-times close'></i>
+        </div>
+}
+
+@if (TempData["Success"] != null)
+{
+        <div class="toogle success">
+            <i class='fas fa-exclamation-circle'></i>
+            <div class="toogle-deails">
+                <h5>Success:</h5>
+                <p>@TempData["Success"]</p>
+            </div>
+            <i class='fas fa-times close'></i>
+        </div>
+}
