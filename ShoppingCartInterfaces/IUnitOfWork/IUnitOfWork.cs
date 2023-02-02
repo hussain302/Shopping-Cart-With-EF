@@ -10,6 +10,6 @@ namespace ShoppingCartInterfaces.IUnitOfWork
     public interface IUnitOfWork
     { 
         ICategoryRepository Category { get; }
-        Task<int> Save();
+        IProductRepository Product { get; }       
     }
 }

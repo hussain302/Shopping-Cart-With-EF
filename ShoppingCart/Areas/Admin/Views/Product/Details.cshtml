@@ -1,0 +1,64 @@
+﻿@model ProductViewModel
+
+<div class="container">
+    <partial name="_Notification">
+        <br />
+        <div class="text-center bg-secondary">
+            <br />
+            <h1 class="display-4"> @ViewData["Title"] Product </h1>
+            <a asp-action="Manage" class="btn btn-info">Manage <i class="fa fa-arrow-left"></i></a>
+            <br />
+            <br />
+        </div>
+        <div class="mt-5">
+            <form>
+                <input hidden="hidden" asp-for="Product.Id" />
+                <fieldset>
+                    <legend> Enter data </legend>
+                    <div class="form-group">
+                        <label for="exampleInputEmail1" class="form-label mt-4">Product Name</label>
+                        <input disabled type="text" asp-for="Product.Name" class="form-control"
+                               id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter Product Title">
+                    </div>
+                    <div class="form-group">
+                        <label for="example1" class="form-label mt-4">Select Category</label>
+                        <select disabled id="example1" class="form-control">
+                            <option value=""> - Select Product's Category -  </option>
+                            <option value=""> 1 </option>
+                            <option value=""> 2 </option>
+                        </select>
+                    </div>
+                   
+
+                    <div class="form-group">
+                        <label for="Price" class="form-label mt-4">Price</label>
+                        <input disabled type="number" asp-for="Product.Price" class="form-control" id="Price"
+                               aria-describedby="emailHelp" placeholder="Enter Product Price">
+                    </div>
+
+                    <div class="form-group">
+                        <label for="Display" class="form-label mt-4">Display Order</label>
+                        <input disabled type="number" min="1" asp-for="Product.DisplayOrder"
+                               class="form-control" id="Display" aria-describedby="emailHelp" placeholder="Enter Display Order">
+                    </div>
+                    <div class="form-group">
+                        <label  for="Description" class="form-label mt-4">Description</label>
+                        <textarea disabled rows="3" asp-for="Product.Description "
+                                  class="form-control" id="Description" aria-describedby="emailHelp"
+                                  placeholder="Enter Product Description">
+                        </textarea>
+                    </div>
+                    <div class="form-group">
+                        <label for="image" class="form-label mt-4">Image</label>
+                        <input disabled type="file" class="form-control" id="image"
+                               aria-describedby="emailHelp" placeholder="Choose file">
+                    </div>
+
+                    <div class="mt-3 text-center">
+                        <a asp-action="CreateOrEdit" asp-route-id="@Model.Product.Id" 
+                        class="@ViewData["button-color"]">Edit Product</a>
+                    </div>
+                </fieldset>
+            </form>
+        </div>
+</div>
