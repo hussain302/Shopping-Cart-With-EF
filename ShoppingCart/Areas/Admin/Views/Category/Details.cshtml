@@ -1,0 +1,36 @@
+﻿@model CategoryViewModel
+
+<div class="container">
+    <partial name="_Notification">
+        <br />
+        <div class="text-center bg-secondary">
+            <br />
+            <h1 class="display-4"> @ViewData["Title"] Category </h1>
+            <a asp-area="Admin" asp-controller="Category" asp-action="Manage" class="btn btn-info">Manage <i class="fa fa-arrow-left"></i></a>
+            <br />
+            <br />
+        </div>
+        <div class="mt-5">
+            <form>
+              <input hidden="hidden" asp-for="Category.Id" />
+            
+                <fieldset>
+                    <legend> Enter data </legend>
+                    <div class="form-group">
+                        <label for="exampleInputEmail1" class="form-label mt-4">Category Name</label>
+                        <input type="text" asp-for="Category.Name" disabled class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter Category Name">
+                    </div>
+
+
+                    <div class="form-group">
+                        <label for="exampleInputEmail1" class="form-label mt-4">Diaplay Order</label>
+                        <input type="text" disabled asp-for="Category.DisplayOrder" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter Display Order">
+                    </div>
+
+                    <div class="mt-3 text-center">
+                        <a asp-area="Admin" asp-controller="Category" asp-action="CreateOrEdit" asp-route-id="@Model.Category.Id" class="@ViewData["button-color"]">Edit Category</a>
+                    </div>
+                </fieldset>
+            </form>
+        </div>
+</div>
