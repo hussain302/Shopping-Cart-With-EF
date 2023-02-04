@@ -1,4 +1,6 @@
-﻿using System.ComponentModel.DataAnnotations;
+﻿using Microsoft.AspNetCore.Http;
+using System.ComponentModel.DataAnnotations;
+using System.ComponentModel.DataAnnotations.Schema;
 
 namespace ShoppingCartModels.DbModels
 {
@@ -23,7 +25,10 @@ namespace ShoppingCartModels.DbModels
         public string? ModifiedBy { get; set; } = string.Empty;
         public string? CreatedBy { get; set; } = string.Empty;
 
+        //[ForeignKey("CategoryId")]
         public int CategoryId { get; set; }
-        public Category Category { get; set; } = new Category();
+        public virtual Category Category { get; set; }
+
+        
     }
 }

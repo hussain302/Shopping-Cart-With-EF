@@ -9,6 +9,6 @@ namespace ShoppingCartInterfaces.IRepositories
 {
     public interface IProductRepository : IBaseRepository<Product>
     {
-        
+       Task<IEnumerable<Product>> GetProducts();
     }
 }

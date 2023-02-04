@@ -1,23 +1,28 @@
-﻿using Microsoft.AspNetCore.Mvc;
+﻿using Microsoft.AspNetCore.Hosting;
+using Microsoft.AspNetCore.Mvc;
 using ShoppingCartInterfaces.IUnitOfWork;
+using ShoppingCartModels.DbModels;
 using ShoppingCartModels.ViewModels;
+using System.Web.WebPages.Html;
 
 namespace ShoppingCart.Areas.Admin.Controllers
 {
     public class ProductController : Controller
     {
         private readonly IUnitOfWork _unitOfWork;
-
-        public ProductController(IUnitOfWork unitOfWork)
+        private readonly IWebHostEnvironment _web;
+        public ProductController(IUnitOfWork unitOfWork, IWebHostEnvironment web)
         {
             this._unitOfWork = unitOfWork;
+            this._web = web;
         }
         public IActionResult Manage()
         {
             try
             {
                 ProductViewModel model = new ProductViewModel();
-                model.Products = _unitOfWork.Product.GetAll().Result.OrderBy(x => Convert.ToInt32(x.DisplayOrder));                 
+                model.Products = _unitOfWork.Product.GetProducts()
+                    .Result.OrderBy(x => Convert.ToInt32(x.DisplayOrder));
                 return View(model);
             }
             catch (Exception ex)
@@ -31,6 +36,7 @@ namespace ShoppingCart.Areas.Admin.Controllers
         {
             try
             {
+                ViewBag.Categories = _unitOfWork.Category.GetAll().Result.ToList();
                 //Create
                 if (id == null)
                 {
@@ -43,8 +49,10 @@ namespace ShoppingCart.Areas.Admin.Controllers
                 {
                     ViewData["Title"] = "Update";
                     ViewData["button-color"] = "btn btn-success";
-                    ProductViewModel model = new ProductViewModel();
-                    model.Product = await _unitOfWork.Product.Find(Convert.ToInt32(id));
+                    ProductViewModel model = new ProductViewModel
+                    {
+                        Product = await _unitOfWork.Product.Find(Convert.ToInt32(id))                        
+                    };
                     return View(model);
                 }
             }
@@ -60,19 +68,15 @@ namespace ShoppingCart.Areas.Admin.Controllers
             try
             {
                 int res = 0;
-                //TempData["Success"] = $"{model.Product.Name} - Product added";
-                if (model.Product.Id > 0)
-                {
-                    res = await _unitOfWork.Product.Update(model.Product);
-                }
-                else
-                {
-                    res = await _unitOfWork.Product.Add(model.Product);
+                string folderPath = UploadedFile(model);
+                model.Product.ImageUrl = folderPath;
 
-                }
-
+                if (model.Product.Id > 0) res = await _unitOfWork.Product.Update(model.Product);
+                else res = await _unitOfWork.Product.Add(model.Product);
+                
                 if (res == 0) TempData["Error"] = $"{model.Product.Name} - Product didn't updated";
                 else TempData["Success"] = $"{model.Product.Name} - Product updated";
+                
                 return RedirectToAction("Manage");
             }
             catch (Exception ex)
@@ -132,5 +136,25 @@ namespace ShoppingCart.Areas.Admin.Controllers
                 return RedirectToAction("Manage");
             }
         }
+
+        #region Image Upload Logic
+        private string UploadedFile(ProductViewModel model)
+        {
+            string uniqueFileName = string.Empty;
+
+            if (model.PhotoFile != null)
+            {
+                string uploadsFolder = Path.Combine(_web.WebRootPath, "images/products");
+                uniqueFileName = Guid.NewGuid().ToString() + "_" + model.PhotoFile.FileName;
+                string filePath = Path.Combine(uploadsFolder, uniqueFileName);
+                using (var fileStream = new FileStream(filePath, FileMode.Create))
+                {
+                    model.PhotoFile.CopyTo(fileStream);
+                }
+            }
+            return uniqueFileName;
+        }
+        #endregion
+
     }
 }

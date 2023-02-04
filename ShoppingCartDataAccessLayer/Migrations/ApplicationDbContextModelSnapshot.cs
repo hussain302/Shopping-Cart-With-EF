@@ -51,7 +51,7 @@ namespace ShoppingCartDataAccessLayer.Migrations
 
                     b.HasKey("Id");
 
-                    b.ToTable("Categories");
+                    b.ToTable("Categories", (string)null);
                 });
 
             modelBuilder.Entity("ShoppingCartModels.DbModels.Product", b =>
@@ -100,7 +100,7 @@ namespace ShoppingCartDataAccessLayer.Migrations
 
                     b.HasIndex("CategoryId");
 
-                    b.ToTable("Products");
+                    b.ToTable("Products", (string)null);
                 });
 
             modelBuilder.Entity("ShoppingCartModels.DbModels.Product", b =>

@@ -10,4 +10,8 @@
     <Folder Include="WebUtils\" />
   </ItemGroup>
 
+  <ItemGroup>
+    <ProjectReference Include="..\ShoppingCartModels\ShoppingCartModels.csproj" />
+  </ItemGroup>
+
 </Project>
