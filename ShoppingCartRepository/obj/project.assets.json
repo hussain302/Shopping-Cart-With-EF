@@ -1179,6 +1179,19 @@
         "runtime": {
           "bin/placeholder/ShoppingCartModels.dll": {}
         }
+      },
+      "ShoppingCartUtilities/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v6.0",
+        "dependencies": {
+          "ShoppingCartModels": "1.0.0"
+        },
+        "compile": {
+          "bin/placeholder/ShoppingCartUtilities.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/ShoppingCartUtilities.dll": {}
+        }
       }
     }
   },
@@ -3443,12 +3456,18 @@
       "type": "project",
       "path": "../ShoppingCartModels/ShoppingCartModels.csproj",
       "msbuildProject": "../ShoppingCartModels/ShoppingCartModels.csproj"
+    },
+    "ShoppingCartUtilities/1.0.0": {
+      "type": "project",
+      "path": "../ShoppingCartUtilities/ShoppingCartUtilities.csproj",
+      "msbuildProject": "../ShoppingCartUtilities/ShoppingCartUtilities.csproj"
     }
   },
   "projectFileDependencyGroups": {
     "net6.0": [
       "ShoppingCartDataAccessLayer >= 1.0.0",
-      "ShoppingCartInterfaces >= 1.0.0"
+      "ShoppingCartInterfaces >= 1.0.0",
+      "ShoppingCartUtilities >= 1.0.0"
     ]
   },
   "packageFolders": {
@@ -3489,6 +3508,9 @@
             },
             "D:\\Dotnet Practices\\Dotnet Projects\\ShoppingCart\\ShoppingCartInterfaces\\ShoppingCartInterfaces.csproj": {
               "projectPath": "D:\\Dotnet Practices\\Dotnet Projects\\ShoppingCart\\ShoppingCartInterfaces\\ShoppingCartInterfaces.csproj"
+            },
+            "D:\\Dotnet Practices\\Dotnet Projects\\ShoppingCart\\ShoppingCartUtilities\\ShoppingCartUtilities.csproj": {
+              "projectPath": "D:\\Dotnet Practices\\Dotnet Projects\\ShoppingCart\\ShoppingCartUtilities\\ShoppingCartUtilities.csproj"
             }
           }
         }

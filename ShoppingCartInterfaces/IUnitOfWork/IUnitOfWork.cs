@@ -8,8 +8,10 @@ using System.Threading.Tasks;
 namespace ShoppingCartInterfaces.IUnitOfWork
 {
     public interface IUnitOfWork
-    { 
+    {
         ICategoryRepository Category { get; }
-        IProductRepository Product { get; }       
+        IProductRepository Product { get; }
+        IUserRepository User { get; }
+        Task<int> Save();
     }
 }

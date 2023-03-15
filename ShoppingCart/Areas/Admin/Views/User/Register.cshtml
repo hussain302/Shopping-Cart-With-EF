@@ -1,0 +1,47 @@
+﻿@model UserViewModel
+@{
+    ViewData["Title"] = "Register";
+    Layout = "~/Views/Shared/_MinimalLayout.cshtml";
+}
+
+<div class="container">
+    <div class="text-center text-white mt-2 mb-2 p-3 bg-primary">
+        <h1 class="display-4"> @ViewData["Title"] Admin </h1>
+    </div>
+
+    <form asp-area="Admin" asp-controller="User" asp-action="Register" method="post">
+        <div class="form-group">
+            <label class="form-label mt-4">Fullname</label>
+            <div class="form-floating mb-3">
+                <input asp-for="User.FullName" type="text" class="form-control" required id="floatingInput" placeholder="example:Muhammad Hussain">
+                <label for="floatingInput">Fullname</label>
+            </div>
+
+            <label class="form-label mt-4">Username</label>
+            <div class="form-floating mb-3">
+                <input asp-for="User.Username" type="text" class="form-control" required id="floatingInput" placeholder="example:Hussain302">
+                <label for="floatingInput">Username</label>
+            </div>
+
+            <label class="form-label mt-4">Password</label>
+            <div class="form-floating">
+                <input asp-for="User.Password" type="password" required class="form-control" id="floatingPassword" placeholder="Password">
+                <label for="floatingPassword">Password</label>
+            </div>
+
+            <label class="form-label mt-4">Select Role</label>
+            <div>
+                <select required id="floatingPassword" class="form-control" asp-for="User.Role">
+                    <option value=""> - Select Role - </option>
+                    <option value="Admin"> - Admin - </option>
+                    <option value="Guest"> - Guest - </option>
+                </select>
+            </div>
+        </div>
+
+        <div class="mt-4 text-center">
+            <button type="submit" class="btn btn-primary"> Create </button> | Already have an account? <small> <a asp-area="Admin" asp-controller="User" asp-action="Login">Login</a> </small>
+        </div>
+    </form>
+
+</div>

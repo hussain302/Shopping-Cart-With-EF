@@ -6,6 +6,7 @@ using System.Linq;
 
 namespace ShoppingCart.Areas.Admin.Controllers
 {
+
     public class CategoryController : Controller
     {
         private readonly IUnitOfWork _unitOfWork;

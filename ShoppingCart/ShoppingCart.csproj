@@ -11,9 +11,12 @@
     <ProjectReference Include="..\ShoppingCartInterfaces\ShoppingCartInterfaces.csproj" />
     <ProjectReference Include="..\ShoppingCartModels\ShoppingCartModels.csproj" />
     <ProjectReference Include="..\ShoppingCartRepository\ShoppingCartRepository.csproj" />
+    <ProjectReference Include="..\ShoppingCartUtilities\ShoppingCartUtilities.csproj" />
   </ItemGroup>
 
   <ItemGroup>
+    <Folder Include="Areas\Customer\Controllers\" />
+    <Folder Include="Areas\Customer\Views\" />
     <Folder Include="wwwroot\images\layoutImages\" />
     <Folder Include="wwwroot\images\Products\" />
   </ItemGroup>
@@ -24,7 +27,7 @@
       <PrivateAssets>all</PrivateAssets>
       <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
     </PackageReference>
-    <PackageReference Include="Microsoft.VisualStudio.Web.CodeGeneration.Design" Version="6.0.11" />
+    <PackageReference Include="Microsoft.VisualStudio.Web.CodeGeneration.Design" Version="6.0.13" />
   </ItemGroup>
 
 </Project>

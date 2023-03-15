@@ -9,6 +9,7 @@
   <ItemGroup>
     <ProjectReference Include="..\ShoppingCartDataAccessLayer\ShoppingCartDataAccessLayer.csproj" />
     <ProjectReference Include="..\ShoppingCartInterfaces\ShoppingCartInterfaces.csproj" />
+    <ProjectReference Include="..\ShoppingCartUtilities\ShoppingCartUtilities.csproj" />
   </ItemGroup>
 
 </Project>

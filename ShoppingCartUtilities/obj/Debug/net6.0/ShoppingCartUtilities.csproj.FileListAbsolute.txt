@@ -10,3 +10,6 @@ D:\Dotnet Practices\Dotnet Projects\ShoppingCart\ShoppingCartUtilities\obj\Debug
 D:\Dotnet Practices\Dotnet Projects\ShoppingCart\ShoppingCartUtilities\obj\Debug\net6.0\refint\ShoppingCartUtilities.dll
 D:\Dotnet Practices\Dotnet Projects\ShoppingCart\ShoppingCartUtilities\obj\Debug\net6.0\ShoppingCartUtilities.pdb
 D:\Dotnet Practices\Dotnet Projects\ShoppingCart\ShoppingCartUtilities\obj\Debug\net6.0\ref\ShoppingCartUtilities.dll
+D:\Dotnet Practices\Dotnet Projects\ShoppingCart\ShoppingCartUtilities\bin\Debug\net6.0\ShoppingCartModels.dll
+D:\Dotnet Practices\Dotnet Projects\ShoppingCart\ShoppingCartUtilities\bin\Debug\net6.0\ShoppingCartModels.pdb
+D:\Dotnet Practices\Dotnet Projects\ShoppingCart\ShoppingCartUtilities\obj\Debug\net6.0\ShoppingCartUtilities.csproj.CopyComplete

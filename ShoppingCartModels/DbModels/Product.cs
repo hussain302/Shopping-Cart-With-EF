@@ -29,6 +29,9 @@ namespace ShoppingCartModels.DbModels
         public int CategoryId { get; set; }
         public virtual Category Category { get; set; }
 
-        
+
+        public virtual ICollection<OrdersProducts> OrdersProducts { get; set; }
+
+
     }
 }

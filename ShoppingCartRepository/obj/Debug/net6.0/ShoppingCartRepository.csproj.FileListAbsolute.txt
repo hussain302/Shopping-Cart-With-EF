@@ -17,3 +17,5 @@ D:\Dotnet Practices\Dotnet Projects\ShoppingCart\ShoppingCartRepository\bin\Debu
 D:\Dotnet Practices\Dotnet Projects\ShoppingCart\ShoppingCartRepository\bin\Debug\net6.0\ShoppingCartInterfaces.pdb
 D:\Dotnet Practices\Dotnet Projects\ShoppingCart\ShoppingCartRepository\bin\Debug\net6.0\ShoppingCartModels.pdb
 D:\Dotnet Practices\Dotnet Projects\ShoppingCart\ShoppingCartRepository\obj\Debug\net6.0\ShoppingCartRepository.csproj.CopyComplete
+D:\Dotnet Practices\Dotnet Projects\ShoppingCart\ShoppingCartRepository\bin\Debug\net6.0\ShoppingCartUtilities.dll
+D:\Dotnet Practices\Dotnet Projects\ShoppingCart\ShoppingCartRepository\bin\Debug\net6.0\ShoppingCartUtilities.pdb
