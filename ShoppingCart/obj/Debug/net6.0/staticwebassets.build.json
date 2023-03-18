@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "kH6lwmG0RHxde71/LgkE3bsGYqWCn/CaTMLAIg9LjJs=",
+  "Hash": "qDkX0vPpi1hShgSJtxHGwT0bZdtT07efFljsxH0lDEM=",
   "Source": "ShoppingCart",
   "BasePath": "_content/ShoppingCart",
   "Mode": "Default",
@@ -100,6 +100,23 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\images\\layoutImages\\banner01.webp"
+    },
+    {
+      "Identity": "D:\\Dotnet Practices\\Dotnet Projects\\ShoppingCart\\ShoppingCart\\wwwroot\\images\\layoutImages\\di4oMbX5T.png",
+      "SourceId": "ShoppingCart",
+      "SourceType": "Discovered",
+      "ContentRoot": "D:\\Dotnet Practices\\Dotnet Projects\\ShoppingCart\\ShoppingCart\\wwwroot\\",
+      "BasePath": "_content/ShoppingCart",
+      "RelativePath": "images/layoutImages/di4oMbX5T.png",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\images\\layoutImages\\di4oMbX5T.png"
     },
     {
       "Identity": "D:\\Dotnet Practices\\Dotnet Projects\\ShoppingCart\\ShoppingCart\\wwwroot\\images\\layoutImages\\empty.webp",

@@ -23,7 +23,6 @@ D:\Dotnet Practices\Dotnet Projects\ShoppingCart\ShoppingCart\obj\Debug\net6.0\s
 D:\Dotnet Practices\Dotnet Projects\ShoppingCart\ShoppingCart\obj\Debug\net6.0\staticwebassets.pack.json
 D:\Dotnet Practices\Dotnet Projects\ShoppingCart\ShoppingCart\obj\Debug\net6.0\staticwebassets.build.json
 D:\Dotnet Practices\Dotnet Projects\ShoppingCart\ShoppingCart\obj\Debug\net6.0\staticwebassets.development.json
-D:\Dotnet Practices\Dotnet Projects\ShoppingCart\ShoppingCart\obj\Debug\net6.0\scopedcss\Views\Shared\_Layout.cshtml.rz.scp.css
 D:\Dotnet Practices\Dotnet Projects\ShoppingCart\ShoppingCart\obj\Debug\net6.0\scopedcss\bundle\ShoppingCart.styles.css
 D:\Dotnet Practices\Dotnet Projects\ShoppingCart\ShoppingCart\obj\Debug\net6.0\scopedcss\projectbundle\ShoppingCart.bundle.scp.css
 D:\Dotnet Practices\Dotnet Projects\ShoppingCart\ShoppingCart\obj\Debug\net6.0\ShoppingCart.csproj.CopyComplete
@@ -295,7 +294,6 @@ D:\Dotnet Practices\Dotnet Projects\ShoppingCart\ShoppingCart\bin\Debug\net6.0\S
 D:\Dotnet Practices\Dotnet Projects\ShoppingCart\ShoppingCart\bin\Debug\net6.0\ShoppingCartRepository.dll
 D:\Dotnet Practices\Dotnet Projects\ShoppingCart\ShoppingCart\bin\Debug\net6.0\ShoppingCartInterfaces.pdb
 D:\Dotnet Practices\Dotnet Projects\ShoppingCart\ShoppingCart\bin\Debug\net6.0\ShoppingCartRepository.pdb
-D:\Dotnet Practices\Dotnet Projects\ShoppingCart\ShoppingCart\obj\Debug\net6.0\scopedcss\Views\Shared\_AdminLayout.cshtml.rz.scp.css
 D:\Dotnet Practices\Dotnet Projects\ShoppingCart\ShoppingCart\obj\Debug\net6.0\scopedcss\Areas\Admin\Views\Shared\_AdminLayout.cshtml.rz.scp.css
 D:\Dotnet Practices\Dotnet Projects\ShoppingCart\ShoppingCart\bin\Debug\net6.0\System.Web.Mvc.dll
 D:\Dotnet Practices\Dotnet Projects\ShoppingCart\ShoppingCart\bin\Debug\net6.0\System.Web.Razor.dll
@@ -306,6 +304,10 @@ D:\Dotnet Practices\Dotnet Projects\ShoppingCart\ShoppingCart\bin\Debug\net6.0\S
 D:\Dotnet Practices\Dotnet Projects\ShoppingCart\ShoppingCart\bin\Debug\net6.0\Microsoft.Web.Infrastructure.dll
 D:\Dotnet Practices\Dotnet Projects\ShoppingCart\ShoppingCart\bin\Debug\net6.0\Microsoft.AspNetCore.JsonPatch.dll
 D:\Dotnet Practices\Dotnet Projects\ShoppingCart\ShoppingCart\bin\Debug\net6.0\Newtonsoft.Json.Bson.dll
-D:\Dotnet Practices\Dotnet Projects\ShoppingCart\ShoppingCart\obj\Debug\net6.0\scopedcss\Views\Shared\_MinimalLayout.cshtml.rz.scp.css
 D:\Dotnet Practices\Dotnet Projects\ShoppingCart\ShoppingCart\bin\Debug\net6.0\ShoppingCartUtilities.dll
 D:\Dotnet Practices\Dotnet Projects\ShoppingCart\ShoppingCart\bin\Debug\net6.0\ShoppingCartUtilities.pdb
+D:\Dotnet Practices\Dotnet Projects\ShoppingCart\ShoppingCart\obj\Debug\net6.0\scopedcss\Areas\Customer\Views\Shared\_Layout.cshtml.rz.scp.css
+D:\Dotnet Practices\Dotnet Projects\ShoppingCart\ShoppingCart\obj\Debug\net6.0\scopedcss\Areas\Admin\Views\Shared\_MinimalLayout.cshtml.rz.scp.css
+D:\Dotnet Practices\Dotnet Projects\ShoppingCart\ShoppingCart\obj\Debug\net6.0\scopedcss\Views\Shared\_AdminLayout.cshtml.rz.scp.css
+D:\Dotnet Practices\Dotnet Projects\ShoppingCart\ShoppingCart\obj\Debug\net6.0\scopedcss\Views\Shared\_Layout.cshtml.rz.scp.css
+D:\Dotnet Practices\Dotnet Projects\ShoppingCart\ShoppingCart\obj\Debug\net6.0\scopedcss\Views\Shared\_MinimalLayout.cshtml.rz.scp.css
