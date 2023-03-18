@@ -23,31 +23,31 @@
                     <div class="offcanvas-body">
                         <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
                             <li class="nav-item">
-                                <a class="nav-link active" aria-current="page" href="~/Home/Dashboard">Home</a>
+                                <a class="nav-link active" aria-current="page" href="~/Home/Dashboard">Home - Dashboard</a>
                             </li>
 
                             <li class="nav-item">
                                 <a class="nav-link active" aria-current="page"
-                                   asp-area="Admin" asp-controller="Category" asp-action="Manage">Manage Categories</a>
+                                   asp-area="Admin" asp-controller="User" asp-action="Manage">User Audit Management</a>
                             </li>
 
                             <li class="nav-item">
                                 <a class="nav-link active" aria-current="page"
-                                   asp-area="Admin" asp-controller="Product" asp-action="Manage">Manage Products</a>
+                                   asp-area="Admin" asp-controller="Product" asp-action="Manage">Products Management</a>
                             </li>
-                          
+
+                            <li class="nav-item">
+                                <a class="nav-link active" aria-current="page"
+                                   asp-area="Admin" asp-controller="Category" asp-action="Manage">Categories Management</a>
+                            </li>
                         </ul>                       
                     </div>
                 </div>
             </div>
         </nav>
-
-
     </header>
     
     <main>
-
-
         <div class="container-fluid">
             <main role="main" class="pb-3">
                 @RenderBody()

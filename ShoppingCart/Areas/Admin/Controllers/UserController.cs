@@ -1,6 +1,7 @@
 ﻿using Microsoft.AspNetCore.Mvc;
 using ShoppingCartInterfaces.IUnitOfWork;
 using ShoppingCartModels.DbModels;
+using ShoppingCartModels.ViewModels;
 using ShoppingCartRepository.UnitOfWork;
 using ShoppingCartUtilities.WebUtils;
 
@@ -19,9 +20,12 @@ namespace ShoppingCart.Areas.Admin.Controllers
         {
             try
             {
-                var users = await _unitOfWork.User.GetAll();
-                return View(users);
-            }
+                UserViewModel model = new UserViewModel
+                {
+                    Users = await _unitOfWork.User.GetAll()
+                };
+                return View(model);
+            }            
             catch(Exception ex)
             {
                 TempData["Error"] = ex.Message;
@@ -62,7 +66,7 @@ namespace ShoppingCart.Areas.Admin.Controllers
                     return RedirectToAction("Login");
                 }
                 TempData["Success"] = "User logged in successfully";
-                return RedirectToAction("Dashboard");
+                return RedirectToAction("Dashboard","Home");
             }
             catch (Exception ex)
             {
