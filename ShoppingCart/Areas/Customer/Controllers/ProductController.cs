@@ -1,5 +1,4 @@
 ﻿using Microsoft.AspNetCore.Mvc;
-using Microsoft.AspNetCore.Mvc.RazorPages;
 using ShoppingCartInterfaces.IUnitOfWork;
 using ShoppingCartModels.ViewModels;
 

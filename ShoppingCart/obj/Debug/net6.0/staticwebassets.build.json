@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "G5Ie/ybGOZpul3H+4Xyl76yw76NnI4DI7DEf9VcHa0A=",
+  "Hash": "4WccJ9jOJNDPy9JfSOZJwvyKRgAG7K3DJ1MIT6y9gpA=",
   "Source": "ShoppingCart",
   "BasePath": "_content/ShoppingCart",
   "Mode": "Default",
@@ -236,6 +236,23 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\images\\layoutImages\\black.webp"
+    },
+    {
+      "Identity": "D:\\Dotnet Practices\\Dotnet Projects\\ShoppingCart\\ShoppingCart\\wwwroot\\images\\layoutImages\\Dh7U4bp.png",
+      "SourceId": "ShoppingCart",
+      "SourceType": "Discovered",
+      "ContentRoot": "D:\\Dotnet Practices\\Dotnet Projects\\ShoppingCart\\ShoppingCart\\wwwroot\\",
+      "BasePath": "_content/ShoppingCart",
+      "RelativePath": "images/layoutImages/Dh7U4bp.png",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\images\\layoutImages\\Dh7U4bp.png"
     },
     {
       "Identity": "D:\\Dotnet Practices\\Dotnet Projects\\ShoppingCart\\ShoppingCart\\wwwroot\\images\\layoutImages\\di4oMbX5T.png",
@@ -561,6 +578,23 @@
       "OriginalItemSpec": "wwwroot\\images\\Products\\7b339e1b-7f0c-4b56-bdae-6423e5a80f35_hjkl.webp"
     },
     {
+      "Identity": "D:\\Dotnet Practices\\Dotnet Projects\\ShoppingCart\\ShoppingCart\\wwwroot\\images\\Products\\7c7dda02-6419-4ae9-a554-f884fff2fc17_asdasdasd.webp",
+      "SourceId": "ShoppingCart",
+      "SourceType": "Discovered",
+      "ContentRoot": "D:\\Dotnet Practices\\Dotnet Projects\\ShoppingCart\\ShoppingCart\\wwwroot\\",
+      "BasePath": "_content/ShoppingCart",
+      "RelativePath": "images/Products/7c7dda02-6419-4ae9-a554-f884fff2fc17_asdasdasd.webp",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\images\\Products\\7c7dda02-6419-4ae9-a554-f884fff2fc17_asdasdasd.webp"
+    },
+    {
       "Identity": "D:\\Dotnet Practices\\Dotnet Projects\\ShoppingCart\\ShoppingCart\\wwwroot\\images\\Products\\8452a403-6de5-4897-9c9c-6b1e98e64263_l8.jpg",
       "SourceId": "ShoppingCart",
       "SourceType": "Discovered",
@@ -576,6 +610,23 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\images\\Products\\8452a403-6de5-4897-9c9c-6b1e98e64263_l8.jpg"
+    },
+    {
+      "Identity": "D:\\Dotnet Practices\\Dotnet Projects\\ShoppingCart\\ShoppingCart\\wwwroot\\images\\Products\\8be94704-2355-4f11-83f7-19f781329460_sdf.webp",
+      "SourceId": "ShoppingCart",
+      "SourceType": "Discovered",
+      "ContentRoot": "D:\\Dotnet Practices\\Dotnet Projects\\ShoppingCart\\ShoppingCart\\wwwroot\\",
+      "BasePath": "_content/ShoppingCart",
+      "RelativePath": "images/Products/8be94704-2355-4f11-83f7-19f781329460_sdf.webp",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\images\\Products\\8be94704-2355-4f11-83f7-19f781329460_sdf.webp"
     },
     {
       "Identity": "D:\\Dotnet Practices\\Dotnet Projects\\ShoppingCart\\ShoppingCart\\wwwroot\\images\\Products\\8e4a0d95-497c-49f1-9425-aed3ba3dd082_90_1008964-1A06403_1W00P_20_SlashedOdisseaTrainers-Sneakers-versace-online-store_0_0.webp",
@@ -646,6 +697,23 @@
       "OriginalItemSpec": "wwwroot\\images\\Products\\b79c0107-70e1-4a3e-a6f7-8b1e8c430096_asdasdasd.webp"
     },
     {
+      "Identity": "D:\\Dotnet Practices\\Dotnet Projects\\ShoppingCart\\ShoppingCart\\wwwroot\\images\\Products\\c30caac4-6379-4dab-8fea-f11e3c6ce373_black.webp",
+      "SourceId": "ShoppingCart",
+      "SourceType": "Discovered",
+      "ContentRoot": "D:\\Dotnet Practices\\Dotnet Projects\\ShoppingCart\\ShoppingCart\\wwwroot\\",
+      "BasePath": "_content/ShoppingCart",
+      "RelativePath": "images/Products/c30caac4-6379-4dab-8fea-f11e3c6ce373_black.webp",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\images\\Products\\c30caac4-6379-4dab-8fea-f11e3c6ce373_black.webp"
+    },
+    {
       "Identity": "D:\\Dotnet Practices\\Dotnet Projects\\ShoppingCart\\ShoppingCart\\wwwroot\\images\\Products\\c4b28ed1-0079-4caf-acad-881c04453e8d_90_1004524-1A02259_1Y420_20_OdisseaTrainers-Sneakers-versace-online-store_1_0.webp",
       "SourceId": "ShoppingCart",
       "SourceType": "Discovered",
@@ -661,6 +729,23 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\images\\Products\\c4b28ed1-0079-4caf-acad-881c04453e8d_90_1004524-1A02259_1Y420_20_OdisseaTrainers-Sneakers-versace-online-store_1_0.webp"
+    },
+    {
+      "Identity": "D:\\Dotnet Practices\\Dotnet Projects\\ShoppingCart\\ShoppingCart\\wwwroot\\images\\Products\\d463ec2e-644e-42c8-a7c8-6033d3a325b0_asdasdasd.webp",
+      "SourceId": "ShoppingCart",
+      "SourceType": "Discovered",
+      "ContentRoot": "D:\\Dotnet Practices\\Dotnet Projects\\ShoppingCart\\ShoppingCart\\wwwroot\\",
+      "BasePath": "_content/ShoppingCart",
+      "RelativePath": "images/Products/d463ec2e-644e-42c8-a7c8-6033d3a325b0_asdasdasd.webp",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\images\\Products\\d463ec2e-644e-42c8-a7c8-6033d3a325b0_asdasdasd.webp"
     },
     {
       "Identity": "D:\\Dotnet Practices\\Dotnet Projects\\ShoppingCart\\ShoppingCart\\wwwroot\\images\\Products\\d57191bd-e4bd-459d-85fd-2ee79dbf0021_MicrosoftTeams-image.png",

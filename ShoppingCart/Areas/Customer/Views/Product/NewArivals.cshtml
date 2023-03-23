@@ -16,9 +16,17 @@
                     <img src="~/images/Products/@product.ImageUrl" class="card-img-top" alt="Product 1">
                     <div class="card-body">
                         <h5 class="card-title"> @product.Name - @product.Category.Name </h5>
-                        <p class="card-text"> @product.Description </p>
-                        <h6 class="card-subtitle mb-2 text-muted"><b>RS:</b>@product.Price/-</h6>
-                        <a href="#" class="btn btn-primary">Buy Now</a>
+                        @if (!string.IsNullOrWhiteSpace(product.Sizes))
+                        {
+                            <h6 class="card-text text-muted"> @product.Sizes - @product.Colors </h6>
+                        }
+                        else
+                        {
+                            <br />
+                        }
+                        <h6 class="card-subtitle mb-3 text-muted"><b>RS:</b>@product.Price/-</h6>
+                        <a href="#" class="btn btn-primary">Add to Bag</a>
+                        <a href="#" class="btn btn-warning">View Product</a>
                     </div>
                 </div>
             </div>
