@@ -17,8 +17,7 @@ namespace ShoppingCartDataAccessLayer.ShoppingCartContext
         public DbSet<AdminUser> AdminUsers { get; set; }
         public DbSet<Order> Orders { get; set; }
         public DbSet<OrdersProducts> OrderProducts { get; set; }
-
-
+        public DbSet<SetTrends> SetTrends { get; set; }
 
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {

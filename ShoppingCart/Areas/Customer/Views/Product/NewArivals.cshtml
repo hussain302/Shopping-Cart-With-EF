@@ -1,0 +1,27 @@
+﻿@model ProductViewModel
+
+<div class="container py-5">
+    <h1 class="text-center mb-4">@ViewData["Title"]</h1>
+    @if (Model.Products.Count() == 0)
+    {
+        <div class="text-center text-uppercase">
+            <h3 class="text-muted"> No Products to show </h3>
+        </div>
+    }
+    <div class="row row-cols-1 row-cols-md-3 g-4">
+        @foreach (var product in Model.Products)
+        {
+            <div class="col">
+                <div class="card h-100">
+                    <img src="~/images/Products/@product.ImageUrl" class="card-img-top" alt="Product 1">
+                    <div class="card-body">
+                        <h5 class="card-title"> @product.Name - @product.Category.Name </h5>
+                        <p class="card-text"> @product.Description </p>
+                        <h6 class="card-subtitle mb-2 text-muted"><b>RS:</b>@product.Price/-</h6>
+                        <a href="#" class="btn btn-primary">Buy Now</a>
+                    </div>
+                </div>
+            </div>
+        }
+    </div>
+</div>

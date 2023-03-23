@@ -12,6 +12,7 @@ namespace ShoppingCartInterfaces.IUnitOfWork
         ICategoryRepository Category { get; }
         IProductRepository Product { get; }
         IUserRepository User { get; }
+        ISettingsRepository Settings { get; }
         Task<int> Save();
     }
 }

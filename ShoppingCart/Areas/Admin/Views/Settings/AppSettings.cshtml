@@ -1,0 +1,26 @@
+﻿@{
+    ViewData["Title"] = "Settings";
+}
+
+<div class="container">
+    <div class="mt-5">
+        <h1 class="text-center mb-5">@ViewData["Title"]</h1>
+    </div>
+    <div class="card p-3">
+        <form asp-area="Admin" asp-controller="Settings" asp-action="TrendSettings" method="GET">
+            <fieldset>
+                <legend class="text-center"> Set New Arrival Timespan </legend>
+                <div class="form-group">
+                    <label for="exampleInputEmail1" class="form-label mt-4">Set Days</label>
+                    <input type="number" name="days" min="1" value="@TempData["days"]" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter Days">
+                    <small> E.g: if i enter 10 it will minus 10 days from today. </small>
+                </div>
+
+                <div class="mt-3 text-center">
+                    <button type="submit" class="btn btn-primary">Save</button>
+                </div>
+            </fieldset>
+        </form>
+
+    </div>
+</div>
