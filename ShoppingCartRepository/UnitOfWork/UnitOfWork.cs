@@ -16,6 +16,8 @@ namespace ShoppingCartRepository.UnitOfWork
         public IProductRepository Product { get; private set; }
         public IUserRepository User { get; private set; }
         public ISettingsRepository Settings { get; private set; }
+        public IOrderProductRepository OrderProduct { get;private set; }
+        public IOrderRepository Order { get; private set; }
 
         private readonly ApplicationDbContext _context;
         public UnitOfWork(ApplicationDbContext context)
@@ -25,6 +27,8 @@ namespace ShoppingCartRepository.UnitOfWork
             Product = new ProductRepository(context);
             User = new UserRepository(context);
             Settings = new SettingsRepository(context);
+            OrderProduct = new OrdersProductsRepository(context);
+            Order = new OrderRepository(context);
         }
 
         public async Task<int> Save()

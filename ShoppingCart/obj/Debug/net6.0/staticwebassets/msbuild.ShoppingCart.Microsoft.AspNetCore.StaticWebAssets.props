@@ -304,6 +304,38 @@
       <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
       <OriginalItemSpec>$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\images\layoutImages\sdf.webp))</OriginalItemSpec>
     </StaticWebAsset>
+    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\images\Products\065d76da-7064-4417-9fce-5b0b90e82f96_41c46eaa-e258-4b14-9f38-93ba6a984818_sdf.webp))">
+      <SourceType>Package</SourceType>
+      <SourceId>ShoppingCart</SourceId>
+      <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
+      <BasePath>_content/ShoppingCart</BasePath>
+      <RelativePath>images/Products/065d76da-7064-4417-9fce-5b0b90e82f96_41c46eaa-e258-4b14-9f38-93ba6a984818_sdf.webp</RelativePath>
+      <AssetKind>All</AssetKind>
+      <AssetMode>All</AssetMode>
+      <AssetRole>Primary</AssetRole>
+      <RelatedAsset></RelatedAsset>
+      <AssetTraitName></AssetTraitName>
+      <AssetTraitValue></AssetTraitValue>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+      <OriginalItemSpec>$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\images\Products\065d76da-7064-4417-9fce-5b0b90e82f96_41c46eaa-e258-4b14-9f38-93ba6a984818_sdf.webp))</OriginalItemSpec>
+    </StaticWebAsset>
+    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\images\Products\07509f96-7a36-4182-8ac0-22e8556dd321_7b339e1b-7f0c-4b56-bdae-6423e5a80f35_hjkl.webp))">
+      <SourceType>Package</SourceType>
+      <SourceId>ShoppingCart</SourceId>
+      <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
+      <BasePath>_content/ShoppingCart</BasePath>
+      <RelativePath>images/Products/07509f96-7a36-4182-8ac0-22e8556dd321_7b339e1b-7f0c-4b56-bdae-6423e5a80f35_hjkl.webp</RelativePath>
+      <AssetKind>All</AssetKind>
+      <AssetMode>All</AssetMode>
+      <AssetRole>Primary</AssetRole>
+      <RelatedAsset></RelatedAsset>
+      <AssetTraitName></AssetTraitName>
+      <AssetTraitValue></AssetTraitValue>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+      <OriginalItemSpec>$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\images\Products\07509f96-7a36-4182-8ac0-22e8556dd321_7b339e1b-7f0c-4b56-bdae-6423e5a80f35_hjkl.webp))</OriginalItemSpec>
+    </StaticWebAsset>
     <StaticWebAsset Include="$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\images\Products\0be07f2e-3399-45f2-9abd-ba1bd7324c65_hjkl.webp))">
       <SourceType>Package</SourceType>
       <SourceId>ShoppingCart</SourceId>
@@ -352,6 +384,22 @@
       <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
       <OriginalItemSpec>$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\images\Products\202acd25-ea96-4e5a-97d9-96c9e2987906_MicrosoftTeams-image.png))</OriginalItemSpec>
     </StaticWebAsset>
+    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\images\Products\2a3c2495-4017-4f31-9401-650f2e35bff3_2eb6fe93-f959-494e-b25a-fa4fb97c5837_MicrosoftTeams-image.png))">
+      <SourceType>Package</SourceType>
+      <SourceId>ShoppingCart</SourceId>
+      <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
+      <BasePath>_content/ShoppingCart</BasePath>
+      <RelativePath>images/Products/2a3c2495-4017-4f31-9401-650f2e35bff3_2eb6fe93-f959-494e-b25a-fa4fb97c5837_MicrosoftTeams-image.png</RelativePath>
+      <AssetKind>All</AssetKind>
+      <AssetMode>All</AssetMode>
+      <AssetRole>Primary</AssetRole>
+      <RelatedAsset></RelatedAsset>
+      <AssetTraitName></AssetTraitName>
+      <AssetTraitValue></AssetTraitValue>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+      <OriginalItemSpec>$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\images\Products\2a3c2495-4017-4f31-9401-650f2e35bff3_2eb6fe93-f959-494e-b25a-fa4fb97c5837_MicrosoftTeams-image.png))</OriginalItemSpec>
+    </StaticWebAsset>
     <StaticWebAsset Include="$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\images\Products\2b9ada41-02dd-4edb-a360-7ac891049e53_asdasd.jpg))">
       <SourceType>Package</SourceType>
       <SourceId>ShoppingCart</SourceId>
@@ -383,6 +431,22 @@
       <CopyToOutputDirectory>Never</CopyToOutputDirectory>
       <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
       <OriginalItemSpec>$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\images\Products\2eb6fe93-f959-494e-b25a-fa4fb97c5837_MicrosoftTeams-image.png))</OriginalItemSpec>
+    </StaticWebAsset>
+    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\images\Products\2f599c6e-00b7-45f8-abf8-272af6818e3d_black.webp))">
+      <SourceType>Package</SourceType>
+      <SourceId>ShoppingCart</SourceId>
+      <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
+      <BasePath>_content/ShoppingCart</BasePath>
+      <RelativePath>images/Products/2f599c6e-00b7-45f8-abf8-272af6818e3d_black.webp</RelativePath>
+      <AssetKind>All</AssetKind>
+      <AssetMode>All</AssetMode>
+      <AssetRole>Primary</AssetRole>
+      <RelatedAsset></RelatedAsset>
+      <AssetTraitName></AssetTraitName>
+      <AssetTraitValue></AssetTraitValue>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+      <OriginalItemSpec>$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\images\Products\2f599c6e-00b7-45f8-abf8-272af6818e3d_black.webp))</OriginalItemSpec>
     </StaticWebAsset>
     <StaticWebAsset Include="$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\images\Products\3105919e-7f63-487f-82dd-16e80f482bad_black.webp))">
       <SourceType>Package</SourceType>
@@ -480,6 +544,38 @@
       <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
       <OriginalItemSpec>$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\images\Products\56e9405f-9df7-46c6-81dc-bb007e8452c1_men3.webp))</OriginalItemSpec>
     </StaticWebAsset>
+    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\images\Products\647516c9-bd79-488e-9fd1-7aff38420318_black.webp))">
+      <SourceType>Package</SourceType>
+      <SourceId>ShoppingCart</SourceId>
+      <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
+      <BasePath>_content/ShoppingCart</BasePath>
+      <RelativePath>images/Products/647516c9-bd79-488e-9fd1-7aff38420318_black.webp</RelativePath>
+      <AssetKind>All</AssetKind>
+      <AssetMode>All</AssetMode>
+      <AssetRole>Primary</AssetRole>
+      <RelatedAsset></RelatedAsset>
+      <AssetTraitName></AssetTraitName>
+      <AssetTraitValue></AssetTraitValue>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+      <OriginalItemSpec>$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\images\Products\647516c9-bd79-488e-9fd1-7aff38420318_black.webp))</OriginalItemSpec>
+    </StaticWebAsset>
+    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\images\Products\65382d3d-2626-4c3f-93b8-d2ca4f46754f_asdasd.jpg))">
+      <SourceType>Package</SourceType>
+      <SourceId>ShoppingCart</SourceId>
+      <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
+      <BasePath>_content/ShoppingCart</BasePath>
+      <RelativePath>images/Products/65382d3d-2626-4c3f-93b8-d2ca4f46754f_asdasd.jpg</RelativePath>
+      <AssetKind>All</AssetKind>
+      <AssetMode>All</AssetMode>
+      <AssetRole>Primary</AssetRole>
+      <RelatedAsset></RelatedAsset>
+      <AssetTraitName></AssetTraitName>
+      <AssetTraitValue></AssetTraitValue>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+      <OriginalItemSpec>$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\images\Products\65382d3d-2626-4c3f-93b8-d2ca4f46754f_asdasd.jpg))</OriginalItemSpec>
+    </StaticWebAsset>
     <StaticWebAsset Include="$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\images\Products\7b339e1b-7f0c-4b56-bdae-6423e5a80f35_hjkl.webp))">
       <SourceType>Package</SourceType>
       <SourceId>ShoppingCart</SourceId>
@@ -512,6 +608,22 @@
       <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
       <OriginalItemSpec>$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\images\Products\7c7dda02-6419-4ae9-a554-f884fff2fc17_asdasdasd.webp))</OriginalItemSpec>
     </StaticWebAsset>
+    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\images\Products\820e1999-5aca-4658-94bc-3efc0fe84627_ds.webp))">
+      <SourceType>Package</SourceType>
+      <SourceId>ShoppingCart</SourceId>
+      <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
+      <BasePath>_content/ShoppingCart</BasePath>
+      <RelativePath>images/Products/820e1999-5aca-4658-94bc-3efc0fe84627_ds.webp</RelativePath>
+      <AssetKind>All</AssetKind>
+      <AssetMode>All</AssetMode>
+      <AssetRole>Primary</AssetRole>
+      <RelatedAsset></RelatedAsset>
+      <AssetTraitName></AssetTraitName>
+      <AssetTraitValue></AssetTraitValue>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+      <OriginalItemSpec>$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\images\Products\820e1999-5aca-4658-94bc-3efc0fe84627_ds.webp))</OriginalItemSpec>
+    </StaticWebAsset>
     <StaticWebAsset Include="$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\images\Products\8452a403-6de5-4897-9c9c-6b1e98e64263_l8.jpg))">
       <SourceType>Package</SourceType>
       <SourceId>ShoppingCart</SourceId>
@@ -527,6 +639,22 @@
       <CopyToOutputDirectory>Never</CopyToOutputDirectory>
       <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
       <OriginalItemSpec>$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\images\Products\8452a403-6de5-4897-9c9c-6b1e98e64263_l8.jpg))</OriginalItemSpec>
+    </StaticWebAsset>
+    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\images\Products\84646a70-dec5-498f-adfe-c9e9c4d05314_4f8dd4cc-cb10-43fc-b33f-9fe08f5a10c1_90_1008124-1A05817_2W210_20_CrystalOdisseaTrainers-Sneakers-versace-online-store_1_0.webp))">
+      <SourceType>Package</SourceType>
+      <SourceId>ShoppingCart</SourceId>
+      <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
+      <BasePath>_content/ShoppingCart</BasePath>
+      <RelativePath>images/Products/84646a70-dec5-498f-adfe-c9e9c4d05314_4f8dd4cc-cb10-43fc-b33f-9fe08f5a10c1_90_1008124-1A05817_2W210_20_CrystalOdisseaTrainers-Sneakers-versace-online-store_1_0.webp</RelativePath>
+      <AssetKind>All</AssetKind>
+      <AssetMode>All</AssetMode>
+      <AssetRole>Primary</AssetRole>
+      <RelatedAsset></RelatedAsset>
+      <AssetTraitName></AssetTraitName>
+      <AssetTraitValue></AssetTraitValue>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+      <OriginalItemSpec>$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\images\Products\84646a70-dec5-498f-adfe-c9e9c4d05314_4f8dd4cc-cb10-43fc-b33f-9fe08f5a10c1_90_1008124-1A05817_2W210_20_CrystalOdisseaTrainers-Sneakers-versace-online-store_1_0.webp))</OriginalItemSpec>
     </StaticWebAsset>
     <StaticWebAsset Include="$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\images\Products\8be94704-2355-4f11-83f7-19f781329460_sdf.webp))">
       <SourceType>Package</SourceType>
@@ -576,6 +704,22 @@
       <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
       <OriginalItemSpec>$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\images\Products\8f364f82-a624-4ea3-838d-f9745d803e98_90_1004524-1A02259_1Y420_20_OdisseaTrainers-Sneakers-versace-online-store_1_0.webp))</OriginalItemSpec>
     </StaticWebAsset>
+    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\images\Products\966b55b2-800a-4a2d-b78c-431c834d3af3_black.webp))">
+      <SourceType>Package</SourceType>
+      <SourceId>ShoppingCart</SourceId>
+      <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
+      <BasePath>_content/ShoppingCart</BasePath>
+      <RelativePath>images/Products/966b55b2-800a-4a2d-b78c-431c834d3af3_black.webp</RelativePath>
+      <AssetKind>All</AssetKind>
+      <AssetMode>All</AssetMode>
+      <AssetRole>Primary</AssetRole>
+      <RelatedAsset></RelatedAsset>
+      <AssetTraitName></AssetTraitName>
+      <AssetTraitValue></AssetTraitValue>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+      <OriginalItemSpec>$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\images\Products\966b55b2-800a-4a2d-b78c-431c834d3af3_black.webp))</OriginalItemSpec>
+    </StaticWebAsset>
     <StaticWebAsset Include="$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\images\Products\99f86d4a-e640-448d-b224-c62ef682ae19_MicrosoftTeams-image.png))">
       <SourceType>Package</SourceType>
       <SourceId>ShoppingCart</SourceId>
@@ -608,6 +752,22 @@
       <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
       <OriginalItemSpec>$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\images\Products\b79c0107-70e1-4a3e-a6f7-8b1e8c430096_asdasdasd.webp))</OriginalItemSpec>
     </StaticWebAsset>
+    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\images\Products\c258dcf2-3ce3-4f47-b855-2cb44be0c830_fafc29f5-452e-4197-b0c7-22b4e6f19be3_90_1004524-1A02259_1Y420_20_OdisseaTrainers-Sneakers-versace-online-store_1_0.webp))">
+      <SourceType>Package</SourceType>
+      <SourceId>ShoppingCart</SourceId>
+      <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
+      <BasePath>_content/ShoppingCart</BasePath>
+      <RelativePath>images/Products/c258dcf2-3ce3-4f47-b855-2cb44be0c830_fafc29f5-452e-4197-b0c7-22b4e6f19be3_90_1004524-1A02259_1Y420_20_OdisseaTrainers-Sneakers-versace-online-store_1_0.webp</RelativePath>
+      <AssetKind>All</AssetKind>
+      <AssetMode>All</AssetMode>
+      <AssetRole>Primary</AssetRole>
+      <RelatedAsset></RelatedAsset>
+      <AssetTraitName></AssetTraitName>
+      <AssetTraitValue></AssetTraitValue>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+      <OriginalItemSpec>$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\images\Products\c258dcf2-3ce3-4f47-b855-2cb44be0c830_fafc29f5-452e-4197-b0c7-22b4e6f19be3_90_1004524-1A02259_1Y420_20_OdisseaTrainers-Sneakers-versace-online-store_1_0.webp))</OriginalItemSpec>
+    </StaticWebAsset>
     <StaticWebAsset Include="$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\images\Products\c30caac4-6379-4dab-8fea-f11e3c6ce373_black.webp))">
       <SourceType>Package</SourceType>
       <SourceId>ShoppingCart</SourceId>
@@ -639,6 +799,38 @@
       <CopyToOutputDirectory>Never</CopyToOutputDirectory>
       <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
       <OriginalItemSpec>$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\images\Products\c4b28ed1-0079-4caf-acad-881c04453e8d_90_1004524-1A02259_1Y420_20_OdisseaTrainers-Sneakers-versace-online-store_1_0.webp))</OriginalItemSpec>
+    </StaticWebAsset>
+    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\images\Products\ce4c2a7a-a80a-4e99-88a2-7a4e6d82a552_8e4a0d95-497c-49f1-9425-aed3ba3dd082_90_1008964-1A06403_1W00P_20_SlashedOdisseaTrainers-Sneakers-versace-online-store_0_0.webp))">
+      <SourceType>Package</SourceType>
+      <SourceId>ShoppingCart</SourceId>
+      <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
+      <BasePath>_content/ShoppingCart</BasePath>
+      <RelativePath>images/Products/ce4c2a7a-a80a-4e99-88a2-7a4e6d82a552_8e4a0d95-497c-49f1-9425-aed3ba3dd082_90_1008964-1A06403_1W00P_20_SlashedOdisseaTrainers-Sneakers-versace-online-store_0_0.webp</RelativePath>
+      <AssetKind>All</AssetKind>
+      <AssetMode>All</AssetMode>
+      <AssetRole>Primary</AssetRole>
+      <RelatedAsset></RelatedAsset>
+      <AssetTraitName></AssetTraitName>
+      <AssetTraitValue></AssetTraitValue>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+      <OriginalItemSpec>$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\images\Products\ce4c2a7a-a80a-4e99-88a2-7a4e6d82a552_8e4a0d95-497c-49f1-9425-aed3ba3dd082_90_1008964-1A06403_1W00P_20_SlashedOdisseaTrainers-Sneakers-versace-online-store_0_0.webp))</OriginalItemSpec>
+    </StaticWebAsset>
+    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\images\Products\cfb9afda-e10c-4d62-8bbd-780b8598e45d_647516c9-bd79-488e-9fd1-7aff38420318_black.webp))">
+      <SourceType>Package</SourceType>
+      <SourceId>ShoppingCart</SourceId>
+      <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
+      <BasePath>_content/ShoppingCart</BasePath>
+      <RelativePath>images/Products/cfb9afda-e10c-4d62-8bbd-780b8598e45d_647516c9-bd79-488e-9fd1-7aff38420318_black.webp</RelativePath>
+      <AssetKind>All</AssetKind>
+      <AssetMode>All</AssetMode>
+      <AssetRole>Primary</AssetRole>
+      <RelatedAsset></RelatedAsset>
+      <AssetTraitName></AssetTraitName>
+      <AssetTraitValue></AssetTraitValue>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+      <OriginalItemSpec>$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\images\Products\cfb9afda-e10c-4d62-8bbd-780b8598e45d_647516c9-bd79-488e-9fd1-7aff38420318_black.webp))</OriginalItemSpec>
     </StaticWebAsset>
     <StaticWebAsset Include="$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\images\Products\d463ec2e-644e-42c8-a7c8-6033d3a325b0_asdasdasd.webp))">
       <SourceType>Package</SourceType>
@@ -703,6 +895,22 @@
       <CopyToOutputDirectory>Never</CopyToOutputDirectory>
       <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
       <OriginalItemSpec>$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\images\Products\f61c961f-b01e-4da2-b0f5-1b97ff757ae5_90_1004524-1A02259_1Y420_20_OdisseaTrainers-Sneakers-versace-online-store_1_0.webp))</OriginalItemSpec>
+    </StaticWebAsset>
+    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\images\Products\f927bf5a-39e3-4be0-8421-ae0f8170372a_7c7dda02-6419-4ae9-a554-f884fff2fc17_asdasdasd.webp))">
+      <SourceType>Package</SourceType>
+      <SourceId>ShoppingCart</SourceId>
+      <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
+      <BasePath>_content/ShoppingCart</BasePath>
+      <RelativePath>images/Products/f927bf5a-39e3-4be0-8421-ae0f8170372a_7c7dda02-6419-4ae9-a554-f884fff2fc17_asdasdasd.webp</RelativePath>
+      <AssetKind>All</AssetKind>
+      <AssetMode>All</AssetMode>
+      <AssetRole>Primary</AssetRole>
+      <RelatedAsset></RelatedAsset>
+      <AssetTraitName></AssetTraitName>
+      <AssetTraitValue></AssetTraitValue>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+      <OriginalItemSpec>$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\images\Products\f927bf5a-39e3-4be0-8421-ae0f8170372a_7c7dda02-6419-4ae9-a554-f884fff2fc17_asdasdasd.webp))</OriginalItemSpec>
     </StaticWebAsset>
     <StaticWebAsset Include="$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\images\Products\fafc29f5-452e-4197-b0c7-22b4e6f19be3_90_1004524-1A02259_1Y420_20_OdisseaTrainers-Sneakers-versace-online-store_1_0.webp))">
       <SourceType>Package</SourceType>

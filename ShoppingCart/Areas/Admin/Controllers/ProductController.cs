@@ -36,7 +36,7 @@ namespace ShoppingCart.Areas.Admin.Controllers
         {
             try
             {
-                ViewBag.Categories = _unitOfWork.Category.GetAll().Result.ToList();
+                ViewBag.Categories = await _unitOfWork.Category.GetAll();
                 //Create
                 if (id == null)
                 {

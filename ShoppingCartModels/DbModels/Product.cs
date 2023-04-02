@@ -32,7 +32,7 @@ namespace ShoppingCartModels.DbModels
         public virtual Category Category { get; set; }
 
 
-        public virtual ICollection<OrdersProducts> OrdersProducts { get; set; }
+        public virtual ICollection<OrderProduct> OrderProduct { get; set; }
 
 
     }

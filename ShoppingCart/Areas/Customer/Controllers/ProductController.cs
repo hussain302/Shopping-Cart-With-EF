@@ -16,30 +16,42 @@ namespace ShoppingCart.Areas.Customer.Controllers
         [ResponseCache(Duration = 0, Location = ResponseCacheLocation.None, NoStore = true)]
         public async Task<IActionResult> NewArivals()
         {
-            TimeSpan ts = new TimeSpan();
-            var day = await unitOfWork.Settings.GetTrendsDays(1);
-            ts = ts.Subtract(TimeSpan.FromDays(day.Days));
-            ViewData["Title"] = $"New Arrivals";
-            ProductViewModel model = new ProductViewModel
+            try
             {
-                Products = await Task.Run(() => unitOfWork.Product
-                                          .GetProducts().Result.Where(x=>x.CreatedOn > DateTime.Now + ts)
-                                          .ToList())
-            };
-            return View(model);
+                ViewData["Title"] = $"Featured Products";
+                ProductViewModel model = new ProductViewModel
+                {
+                    Products = await Task.Run(() => unitOfWork.Product
+                                              .GetProducts().Result.OrderByDescending(x => x.CreatedOn)
+                                              .ToList())
+                };
+                return View(model);
+            }
+            catch(Exception ex)
+            {
+                TempData["Error"] = $"{ex.Message}";
+                return RedirectToAction("Index","Home");
+            }
         }
 
         [ResponseCache(Duration = 0, Location = ResponseCacheLocation.None, NoStore = true)]
         public async Task<IActionResult> ProductPage(string pageName)
         {
-            ViewData["Title"] = $"{pageName} Collection";
-            ProductViewModel model = new ProductViewModel
+            try
             {
-                Products = await Task.Run(() => unitOfWork.Product
-                                          .GetProducts().Result.Where(x => x.Category.Name == pageName)
-                                          .ToList())        
-            };
-            return View(model);
+                ViewData["Title"] = $"{pageName} Collection";
+                ProductViewModel model = new ProductViewModel
+                {
+                    Products = await Task.Run(() => unitOfWork.Product
+                                              .GetProducts().Result.Where(x => x.Category.Name == pageName)
+                                              .ToList())
+                };
+                return View(model);
+            }
+            catch (Exception ex)
+            {
+                return RedirectToAction("Index", "Home");
+            }
         }
     }
 }

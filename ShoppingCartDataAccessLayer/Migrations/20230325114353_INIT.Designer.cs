@@ -12,8 +12,8 @@ using ShoppingCartDataAccessLayer.ShoppingCartContext;
 namespace ShoppingCartDataAccessLayer.Migrations
 {
     [DbContext(typeof(ApplicationDbContext))]
-    [Migration("20230322112931_productNewChanges")]
-    partial class productNewChanges
+    [Migration("20230325114353_INIT")]
+    partial class INIT
     {
         /// <inheritdoc />
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
@@ -111,10 +111,7 @@ namespace ShoppingCartDataAccessLayer.Migrations
             modelBuilder.Entity("ShoppingCartModels.DbModels.Order", b =>
                 {
                     b.Property<int>("OrderId")
-                        .ValueGeneratedOnAdd()
                         .HasColumnType("int");
-
-                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("OrderId"));
 
                     b.Property<string>("City")
                         .IsRequired()
@@ -124,7 +121,15 @@ namespace ShoppingCartDataAccessLayer.Migrations
                         .IsRequired()
                         .HasColumnType("nvarchar(max)");
 
-                    b.Property<string>("HouseNo")
+                    b.Property<string>("CustomerEmail")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<string>("CustomerName")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<string>("CustomerPhone")
                         .IsRequired()
                         .HasColumnType("nvarchar(max)");
 
@@ -139,6 +144,10 @@ namespace ShoppingCartDataAccessLayer.Migrations
                         .IsRequired()
                         .HasColumnType("nvarchar(max)");
 
+                    b.Property<string>("Street")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
                     b.Property<double>("Total")
                         .HasColumnType("float");
 
@@ -147,7 +156,7 @@ namespace ShoppingCartDataAccessLayer.Migrations
                     b.ToTable("Orders");
                 });
 
-            modelBuilder.Entity("ShoppingCartModels.DbModels.OrdersProducts", b =>
+            modelBuilder.Entity("ShoppingCartModels.DbModels.OrderProduct", b =>
                 {
                     b.Property<int>("OrderId")
                         .HasColumnType("int");
@@ -229,16 +238,32 @@ namespace ShoppingCartDataAccessLayer.Migrations
                     b.ToTable("Products");
                 });
 
-            modelBuilder.Entity("ShoppingCartModels.DbModels.OrdersProducts", b =>
+            modelBuilder.Entity("ShoppingCartModels.DbModels.SetTrends", b =>
+                {
+                    b.Property<int>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("int");
+
+                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"));
+
+                    b.Property<int>("Days")
+                        .HasColumnType("int");
+
+                    b.HasKey("Id");
+
+                    b.ToTable("SetTrends");
+                });
+
+            modelBuilder.Entity("ShoppingCartModels.DbModels.OrderProduct", b =>
                 {
                     b.HasOne("ShoppingCartModels.DbModels.Order", "Order")
-                        .WithMany("OrdersProducts")
+                        .WithMany("OrderProduct")
                         .HasForeignKey("OrderId")
                         .OnDelete(DeleteBehavior.Cascade)
                         .IsRequired();
 
                     b.HasOne("ShoppingCartModels.DbModels.Product", "Product")
-                        .WithMany("OrdersProducts")
+                        .WithMany("OrderProduct")
                         .HasForeignKey("ProductId")
                         .OnDelete(DeleteBehavior.Cascade)
                         .IsRequired();
@@ -266,12 +291,12 @@ namespace ShoppingCartDataAccessLayer.Migrations
 
             modelBuilder.Entity("ShoppingCartModels.DbModels.Order", b =>
                 {
-                    b.Navigation("OrdersProducts");
+                    b.Navigation("OrderProduct");
                 });
 
             modelBuilder.Entity("ShoppingCartModels.DbModels.Product", b =>
                 {
-                    b.Navigation("OrdersProducts");
+                    b.Navigation("OrderProduct");
                 });
 #pragma warning restore 612, 618
         }

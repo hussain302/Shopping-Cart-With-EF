@@ -33,7 +33,9 @@
                     <tbody>
                         @foreach (var item in Model.Users)
                         {
-                            <tr>
+                            @if(item.Role.ToLower() != "super admin")
+                           {
+                               <tr>
                                 <th> @item.Username </th>
                                 <td> @item.FullName </td>
                                 <td> @item.Role </td>
@@ -91,6 +93,7 @@
                                     </a>
                                 </td>
                             </tr>
+                            }
                         }
                     </tbody>
                 </table>

@@ -1,0 +1,57 @@
+﻿@model CartViewModel
+
+<div class="container py-5">
+    <h1 class="text-center mb-4">Your Cart</h1>
+    @if (Model.Products.Count == 0)
+    {
+        <div class="text-center">
+            <p class="display-5">Cart is empty.</p>
+        </div>
+    }
+    else
+    {
+        <table class="table table-responsive table-borderless">
+            <thead class="">
+                <tr>
+                    <th>Image</th>
+                    <th>Title</th>
+                    <th>Price</th>
+                    <th>Options</th>
+                </tr>
+            </thead>
+            <tbody>
+                @foreach (var product in Model.Products)
+                {
+                    <tr>
+                        @if (product.ImageUrl != null)
+                        {
+                            <td>
+                                <img src="~/images/Products/@product.ImageUrl" height="100" width="70" asp-append-version="true" />
+                            </td>
+                        }
+                        else
+                        {
+                            <td> - </td>
+                        }
+                        <td>@product.Name</td>
+                        <td><B> <i>RS: @product.Price</i></B></td>
+                        <td>
+                            <a class="btn btn-sm btn-danger" asp-controller="Cart" asp-action="RemoveItem" asp-route-productId="@product.Id">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-trash-fill" viewBox="0 0 16 16">
+                                  <path d="M2.5 1a1 1 0 0 0-1 1v1a1 1 0 0 0 1 1H3v9a2 2 0 0 0 2 2h6a2 2 0 0 0 2-2V4h.5a1 1 0 0 0 1-1V2a1 1 0 0 0-1-1H10a1 1 0 0 0-1-1H7a1 1 0 0 0-1 1H2.5zm3 4a.5.5 0 0 1 .5.5v7a.5.5 0 0 1-1 0v-7a.5.5 0 0 1 .5-.5zM8 5a.5.5 0 0 1 .5.5v7a.5.5 0 0 1-1 0v-7A.5.5 0 0 1 8 5zm3 .5v7a.5.5 0 0 1-1 0v-7a.5.5 0 0 1 1 0z"/>
+                                </svg>
+                            </a>
+                        </td>
+                    </tr>
+                }
+            </tbody>
+            <tfoot>
+                <tr>
+                <td colspan="2"><B>Total:</B></td>
+                    <td> <B> <i>RS:@Model.TotalPrice</i> </B></td>
+                    <td> <a class="btn btn-sm btn-success" asp-action="Checkout"> Checkout </a>   </td>
+                </tr>
+            </tfoot>
+        </table>
+    }
+</div>

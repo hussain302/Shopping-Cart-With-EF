@@ -25,8 +25,8 @@
                             <br />
                         }
                         <h6 class="card-subtitle mb-3 text-muted"><b>RS:</b>@product.Price/-</h6>
-                        <a href="#" class="btn btn-primary">Add to Bag</a>
-                        <a href="#" class="btn btn-warning">View Product</a>
+                        <a asp-area="Customer" asp-action="AddToCart" asp-controller="Cart" asp-route-productId="@product.Id" class="btn btn-primary">Add to Bag</a>
+                        <a asp-area="Customer" asp-action="Details" asp-controller="Product" asp-route-productId="@product.Id" class="btn btn-warning">View Product</a>
                     </div>
                 </div>
             </div>

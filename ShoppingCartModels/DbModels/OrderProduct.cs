@@ -7,10 +7,10 @@ using System.Threading.Tasks;
 
 namespace ShoppingCartModels.DbModels
 {
-    public class OrdersProducts
+    public class OrderProduct
     {
 
-        public OrdersProducts()
+        public OrderProduct()
         {
 
         }

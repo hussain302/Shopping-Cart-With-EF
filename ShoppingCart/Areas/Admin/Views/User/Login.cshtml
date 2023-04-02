@@ -9,7 +9,9 @@
     <div class="text-center text-white mt-2 mb-2 p-3 bg-primary">
         <h1 class="display-4"> @ViewData["Title"] Admin </h1>
     </div>
-
+    <div class="">
+        <partial name="_Notification">
+    </div>
     <form asp-area="Admin" asp-controller="User" asp-action="Login" method="post">
         <div class="form-group">
             <div class="form-floating mb-3">

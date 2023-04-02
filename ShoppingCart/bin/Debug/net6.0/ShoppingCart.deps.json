@@ -2749,6 +2749,7 @@
       },
       "ShoppingCartUtilities/1.0.0": {
         "dependencies": {
+          "Newtonsoft.Json": "13.0.1",
           "ShoppingCartModels": "1.0.0"
         },
         "runtime": {

@@ -16,7 +16,7 @@ namespace ShoppingCartDataAccessLayer.ShoppingCartContext
         public DbSet<Product> Products { get; set; }
         public DbSet<AdminUser> AdminUsers { get; set; }
         public DbSet<Order> Orders { get; set; }
-        public DbSet<OrdersProducts> OrderProducts { get; set; }
+        public DbSet<OrderProduct> OrderProducts { get; set; }
         public DbSet<SetTrends> SetTrends { get; set; }
 
         protected override void OnModelCreating(ModelBuilder modelBuilder)
@@ -28,17 +28,17 @@ namespace ShoppingCartDataAccessLayer.ShoppingCartContext
                 .WithOne(p => p.Category)
                 .OnDelete(DeleteBehavior.Restrict);
 
-                modelBuilder.Entity<OrdersProducts>()
+                modelBuilder.Entity<OrderProduct>()
                 .HasKey(op => new { op.OrderId, op.ProductId });
 
-                modelBuilder.Entity<OrdersProducts>()
+                modelBuilder.Entity<OrderProduct>()
                     .HasOne(op => op.Order)
-                    .WithMany(o => o.OrdersProducts)
+                    .WithMany(o => o.OrderProduct)
                     .HasForeignKey(op => op.OrderId);
 
-                modelBuilder.Entity<OrdersProducts>()
+                modelBuilder.Entity<OrderProduct>()
                     .HasOne(op => op.Product)
-                    .WithMany(p => p.OrdersProducts)
+                    .WithMany(p => p.OrderProduct)
                     .HasForeignKey(op => op.ProductId);
 
 

@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "gKuImPvJjNrxG0Q74jP9782lVrf+4JZeJjRcg3TyzgQOB3W2S2hCPiLXylGRKxXtmC1wIZXZwkWYnNrqFw5wzw==",
+  "dgSpecHash": "u0YjL8ig4gQJ7YpFBdqSWvNm4kxbnruNPsJUePuFxv+wKR8bljNwpWQDhOPeCPDVcBdB5fg8DFakdAlW3iK9YA==",
   "success": true,
   "projectFilePath": "D:\\Dotnet Practices\\Dotnet Projects\\ShoppingCart\\ShoppingCartUtilities\\ShoppingCartUtilities.csproj",
   "expectedPackageFiles": [
@@ -10,6 +10,7 @@
     "C:\\Users\\Muhammad.Hussain\\.nuget\\packages\\microsoft.aspnetcore.http.features\\2.2.0\\microsoft.aspnetcore.http.features.2.2.0.nupkg.sha512",
     "C:\\Users\\Muhammad.Hussain\\.nuget\\packages\\microsoft.extensions.primitives\\2.2.0\\microsoft.extensions.primitives.2.2.0.nupkg.sha512",
     "C:\\Users\\Muhammad.Hussain\\.nuget\\packages\\microsoft.web.infrastructure\\1.0.0\\microsoft.web.infrastructure.1.0.0.nupkg.sha512",
+    "C:\\Users\\Muhammad.Hussain\\.nuget\\packages\\newtonsoft.json\\13.0.1\\newtonsoft.json.13.0.1.nupkg.sha512",
     "C:\\Users\\Muhammad.Hussain\\.nuget\\packages\\system.memory\\4.5.1\\system.memory.4.5.1.nupkg.sha512",
     "C:\\Users\\Muhammad.Hussain\\.nuget\\packages\\system.runtime.compilerservices.unsafe\\4.5.1\\system.runtime.compilerservices.unsafe.4.5.1.nupkg.sha512"
   ],

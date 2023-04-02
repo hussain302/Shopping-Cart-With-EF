@@ -42,15 +42,15 @@
 </section>
 
 
-@if (ViewBag.TopWomen.Count != 0)
+@if (ViewBag.Trend.Count != 0)
 {
     <section class="products-section">
         <div class=" mt-5">
             <div class="text-center text-dark text-uppercase p-2 mb-2">
-                <h2 class="display-3"><b>Our Top Women Collection</b></h2>
+                <h2 class="display-3"><b>Our Top Trending Articals</b></h2>
             </div>
-            <div class="row">            
-                @foreach (var item in ViewBag.TopWomen)
+            <div class="row">
+                @foreach (var item in ViewBag.Trend)
                 {
                     <div class="col-md-4 mt-1">
                         <div class="card">
@@ -58,7 +58,9 @@
                             <div class="card-body">
                                 <h5 class="card-title">@item.Name</h5>
                                 <h4 class="card-text text-muted"> <b>RS:@item.Price\- </b> </h4>
-                                <a href="#" class="btn btn-primary">Add to Cart</a>
+                                <a asp-area="Customer" asp-action="AddToCart" asp-controller="Cart" asp-route-productId="@item.Id" class="btn btn-primary">Add to Bag</a>
+                                <a asp-area="Customer" asp-action="Details" asp-controller="Product" asp-route-productId="@item.Id" class="btn btn-warning">View Product</a>
+
                             </div>
                         </div>
                     </div>
@@ -67,7 +69,8 @@
         </div>
     </section>
 }
-@if (ViewBag.TopMen.Count != 0)
+
+@*@if (ViewBag.TopMen.Count != 0)
 {
     <section class="products-section">
         <div class=" mt-5">
@@ -84,7 +87,8 @@
                                 <div class="card-body">
                                     <h5 class="card-title">@item.Name</h5>
                                     <h4 class="card-text text-muted"> <b>RS:@item.Price\- </b> </h4>
-                                    <a href="#" class="btn btn-primary">Add to Cart</a>
+                                    <a asp-area="Customer" asp-action="AddToCart" asp-controller="Cart" asp-route-productId="@item.Id" class="btn btn-primary">Add to Bag</a>
+                                    <a asp-area="Customer" asp-action="Details" asp-controller="Product" asp-route-productId="@item.Id" class="btn btn-warning">View Product</a>
                                 </div>
                             </div>
                         </div>
@@ -112,8 +116,9 @@
                             <div class="card-body">
                                 <h5 class="card-title">@item.Name</h5>
                                     <h4 class="card-text  text-muted"> <b>RS:@item.Price\- </b> </h4>
-                                <a href="#" class="btn btn-primary">Add to Cart</a>
-                            </div>
+                                    <a asp-area="Customer" asp-action="AddToCart" asp-controller="Cart" asp-route-productId="@item.Id" class="btn btn-primary">Add to Bag</a>
+                                    <a asp-area="Customer" asp-action="Details" asp-controller="Product" asp-route-productId="@item.Id" class="btn btn-warning">View Product</a>
+                                </div>
                         </div>
                     </div>
                 }
@@ -139,8 +144,9 @@
                                 <img src="~/images/Products/@item.ImageUrl" alt="Product Image" class="card-img-top">
                                 <div class="card-body">
                                     <h5 class="card-title">@item.Name</h5>
-                                    <h4 class="card-text text-muted"> <b>RS:@item.Price\- </b> </h4>
-                                    <a href="#" class="btn btn-primary">Add to Cart</a>
+                                    <h4 class="card-text text-muted"> <b>RS:@item.Price\- </b> </h4>    
+                                    <a asp-area="Customer" asp-action="AddToCart" asp-controller="Cart" asp-route-productId="@item.Id" class="btn btn-primary">Add to Bag</a>
+                                    <a asp-area="Customer" asp-action="Details" asp-controller="Product" asp-route-productId="@item.Id" class="btn btn-warning">View Product</a>
                                 </div>
                             </div>
                         </div>
@@ -150,7 +156,7 @@
         </div>
     </section>
 }
-
+*@
 
 <section class="testimonials-section mt-5">
     <div class="">
