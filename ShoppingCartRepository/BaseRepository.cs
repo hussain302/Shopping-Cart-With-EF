@@ -21,25 +21,25 @@ namespace ShoppingCartRepository
         }
         public async Task<IEnumerable<T>> GetAll()
         {
-            return Entities.AsEnumerable();
+            return Entities.AsEnumerable<T>();
         }
-        public virtual IEnumerable<T> Get(
+        public virtual async Task<IEnumerable<T>> Get(
             Expression<Func<T, bool>> filter = null,
             Func<IQueryable<T>, IOrderedQueryable<T>> orderBy = null)
         {
             IQueryable<T> query = Entities;
             if (filter != null)
             {
-                query = query.Where(filter);
+                query = await Task.Run (() => query.Where(filter));
             }
 
             if (orderBy != null)
             {
-                return orderBy(query).ToList();
+                return await orderBy(query).ToListAsync();
             }
             else
             {
-                return query.ToList();
+                return await query.ToListAsync();
             }
         }
         public virtual List<T> Get(Expression<Func<T, bool>> filter = null,

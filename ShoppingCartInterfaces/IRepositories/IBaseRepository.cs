@@ -10,7 +10,7 @@ namespace ShoppingCartInterfaces.IRepositories
     public interface IBaseRepository<T> where T : class
     {
         Task<IEnumerable<T>> GetAll();
-        IEnumerable<T> Get(
+        Task<IEnumerable<T>> Get(
             Expression<Func<T, bool>> filter = null,
             Func<IQueryable<T>, IOrderedQueryable<T>> orderBy = null
             );

@@ -110,7 +110,7 @@ namespace ShoppingCart.Areas.Customer.Controllers
                 foreach (var product in cart.Products)
                 {
                     price += product.Price;
-                    productTitles += "///" + product.Name;
+                    productTitles += "\"" + product.Name + "\",";
                 }
 
                 int res = await unitOfWork.Order.Add(new Order 
@@ -120,6 +120,7 @@ namespace ShoppingCart.Areas.Customer.Controllers
                     Total = price,
                     OrderDate= DateTime.Now,
                     City = order.City,
+                    OrderStatus = "pending",
                     CustomerEmail= order.CustomerEmail,
                     CustomerName= order.CustomerName,
                     Country=order.Country,

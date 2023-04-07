@@ -36,6 +36,14 @@ build_metadata.AdditionalFiles.CssScope =
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NcSG9tZVxEYXNoYm9hcmQuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
+[D:/Dotnet Practices/Dotnet Projects/ShoppingCart/ShoppingCart/Areas/Admin/Views/Order/Details.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NcT3JkZXJcRGV0YWlscy5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/Dotnet Practices/Dotnet Projects/ShoppingCart/ShoppingCart/Areas/Admin/Views/Order/Manage.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NcT3JkZXJcTWFuYWdlLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
 [D:/Dotnet Practices/Dotnet Projects/ShoppingCart/ShoppingCart/Areas/Admin/Views/Product/CreateOrEdit.cshtml]
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NcUHJvZHVjdFxDcmVhdGVPckVkaXQuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 

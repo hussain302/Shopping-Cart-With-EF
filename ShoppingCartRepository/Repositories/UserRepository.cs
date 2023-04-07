@@ -52,7 +52,7 @@ namespace ShoppingCartRepository.Repositories
                     .Where(x => x.Username == username)
                     .FirstOrDefaultAsync();
                 
-                if(user == null) { return null; }
+                if(user is null) { return null; }
 
                 isMatch = PasswordHasher.VerifyPassword(password, user.Password);
                 
@@ -75,12 +75,11 @@ namespace ShoppingCartRepository.Repositories
         {
             try
             {
-                var user = await _context.AdminUsers
-                    .Where(x => x.Username == adminUser.Username && x.Password == adminUser.Password)
-                    .FirstOrDefaultAsync();
-
-                if (user == null) return null;
-
+                var user = await Task.Run(()=> _context.AdminUsers
+                                                .Where(x => x.Username == adminUser.Username 
+                                                 && x.Password == adminUser.Password)
+                                                .FirstOrDefaultAsync());
+                if (user is null) return null;
                 return user;
             }
             catch (Exception)

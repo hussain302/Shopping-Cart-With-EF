@@ -1,0 +1,88 @@
+﻿@model OrderViewModel
+@{
+    ViewData["Title"] = "Manage";
+}
+<div class="container">
+    <partial name="_Notification" />
+    <br />
+    <div class="text-center bg-secondary">
+        <br />
+        <h1 class="display-4"> @ViewData["Title"] Orders</h1>
+        <br />
+        <br />
+    </div>
+    <div class="mt-5">
+        @if (Model.Orders.Count() != 0)
+        {
+            @foreach (var item in Model.Orders)
+            {
+                <div class="card my-3">
+                    <div class="card-header bg-white text-dark">
+                        @switch (item.OrderStatus)
+                        {
+                            case "pending":
+                                <h4 class="display-6 card-title m-0">
+                                    Order Id: @item.OrderId
+                                    <button type="button" class="btn btn-sm btn-outline-warning">@item.OrderStatus</button>
+                                </h4>
+                                break;
+
+                            case "in process":
+                                <h4 class="display-6  card-title m-0">
+                                    Order Id: @item.OrderId
+                                    <button type="button" class="btn btn-sm btn-outline-primary">@item.OrderStatus</button>
+                                </h4>
+                                break;
+
+                            case "shipping":
+                                <h4 class="display-6  card-title m-0">
+                                    Order Id: @item.OrderId
+                                    <button type="button" class="btn btn-sm btn-outline-danger">@item.OrderStatus</button>
+                                </h4>
+                                break;
+
+                            case "completed":
+                                <h4 class="card-title display-6  m-0">
+                                    Order Id: @item.OrderId
+                                    <button type="button" class="btn btn-sm btn-outline-success">@item.OrderStatus</button>
+                                </h4>
+                                break;
+
+                            default:
+                                <h4 class="card-title display-6  m-0">
+                                    Order Id: @item.OrderId
+                                    <button type="button" class="btn btn-sm btn-outline-secondary">@item.OrderStatus</button>
+                                </h4>
+                                break;
+                        }
+
+                    </div>
+                    <div class="card-body">
+                        <div class="row">
+                            <div class="col-md-6">
+                                <td class="mt-2 card-text"><strong>Order Date:</strong> @item.OrderDate.ToString("dddd, MMMM dd, yyyy")</td><br>
+                                <td class="mt-2 card-text"><strong>Product Names:</strong> @item.ProductNames</td><br>
+                                <td class="mt-2 card-text"><strong>Total:</strong> Rs:@item.Total</td>
+                            </div>
+                            <div class="col-md-6">
+                                <td class="mt-2 card-text"><strong>Customer Name:</strong> @item.CustomerName</td><br>
+                                <td class="mt-2 card-text"><strong>Customer Phone:</strong> @item.CustomerPhone</td><br>
+                                <td class="mt-2 card-text"><strong>Customer Email:</strong> @item.CustomerEmail</td><br>
+                                <td class="mt-2 card-text"><strong>Address:</strong> @item.Street, @item.City, @item.Province @item.PostalCode, @item.Country</td>
+                            </div>
+                        </div>
+                        <div class="row mt-4">
+                            <a asp-area="Admin" asp-action="Details" asp-controller="Order" asp-route-productId="@item.OrderId" class="offset-3 col-6 btn btn-warning">View Order</a>
+                        </div>
+                    </div>
+                </div>
+            }
+        }
+        else
+        {
+            <div class="text-center">
+                <h2 class="display-5"> No Record Found </h2>
+            </div>
+        }
+    </div>
+</div>

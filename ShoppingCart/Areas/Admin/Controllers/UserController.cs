@@ -10,7 +10,6 @@ namespace ShoppingCart.Areas.Admin.Controllers
     public class UserController : Controller
     {
         private readonly IUnitOfWork _unitOfWork;
-
         public UserController(IUnitOfWork unitOfWork)
         {
             _unitOfWork = unitOfWork;
@@ -22,10 +21,11 @@ namespace ShoppingCart.Areas.Admin.Controllers
             {
                 UserViewModel model = new UserViewModel
                 {
-                    Users = await _unitOfWork.User.GetAll()
+                    Users = await Task.Run(()=> _unitOfWork.User.Get().Result
+                                                .OrderByDescending(x => x.IsApproved).ToList())
                 };
                 return View(model);
-            }            
+            }
             catch(Exception ex)
             {
                 TempData["Error"] = ex.Message;
@@ -46,15 +46,14 @@ namespace ShoppingCart.Areas.Admin.Controllers
                 return RedirectToAction("Login");
             }
         }
+
         [HttpPost]
         public async Task<IActionResult> Login(AdminUser user)
         {
             try
             {
-                if(string.IsNullOrWhiteSpace(user.Username) || string.IsNullOrWhiteSpace(user.Password)) TempData["Error"] = "Username/Password Cant be empty";
-               
-                var findUser = await _unitOfWork.User.Login(user.Username, user.Password); 
-                
+                if (string.IsNullOrWhiteSpace(user.Username) || string.IsNullOrWhiteSpace(user.Password)) TempData["Error"] = "Username/Password Cant be empty";
+                var findUser = await _unitOfWork.User.Login(user.Username, user.Password);
                 if(findUser == null)
                 {
                     TempData["Error"] = "User Not found";
@@ -65,7 +64,7 @@ namespace ShoppingCart.Areas.Admin.Controllers
                     TempData["Error"] = "User Not approved yet";
                     return RedirectToAction("Login");
                 }
-                TempData["Success"] = "User logged in successfully";
+                TempData["Success"] = "User logged in successfully";                
                 return RedirectToAction("Dashboard","Home");
             }
             catch (Exception ex)
