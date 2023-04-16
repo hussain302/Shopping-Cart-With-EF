@@ -5,16 +5,22 @@ using ShoppingCartInterfaces.IUnitOfWork;
 using ShoppingCartModels.DbModels;
 using ShoppingCartModels.ViewModels;
 using System;
+using System.Configuration;
+using ShoppingCartUtilities.WebUtils;
+
+
 
 namespace ShoppingCart.Areas.Customer.Controllers
 {
     public class CartController : Controller
     {
         private readonly IUnitOfWork unitOfWork;
+        private readonly IConfiguration configuration;
 
-        public CartController(IUnitOfWork unitOfWork)
+        public CartController(IUnitOfWork unitOfWork, IConfiguration configuration)
         {
             this.unitOfWork = unitOfWork;
+            this.configuration = configuration;
         }
 
         [HttpGet]
@@ -129,6 +135,36 @@ namespace ShoppingCart.Areas.Customer.Controllers
                     Province=order.Province,    
                     Street=order.Street,
                 });
+
+                #region Email sender
+                var sender = configuration.GetValue<string>("senderEmail");
+
+                var password = configuration.GetValue<string>("senderEmailKey");
+
+                var msgBody = SendEmail.EmailTemp.Replace("{Order Id}", Convert.ToString(randomNumber))
+                                                 .Replace("{Customer Name}", order.CustomerName)
+                                                 .Replace("{Total}", Convert.ToString(price))
+                                                 .Replace("{Street}", order.Street)
+                                                 .Replace("{City}", order.City)
+                                                 .Replace("{Province}", order.Province)
+                                                 .Replace("{Country}", order.Country)
+                                                 .Replace("{Order Status}", "pending")
+                                                 .Replace("{Customer Support Email}", "hussainsaqib302@gmail.com")
+                                                 .Replace("{Postal Code}", order.PostalCode)
+                                                 .Replace("{Company Name}", "Brand Matrix")
+                                                 .Replace("{Product Rows}", productTitles);
+
+
+                if (!string.IsNullOrWhiteSpace(sender) && !string.IsNullOrWhiteSpace(password) && !string.IsNullOrWhiteSpace(order.CustomerEmail))
+                {
+                    var response = await SendEmail.PostAnEmail(
+                                     senderEmail: sender,
+                                     senderEmailKey: password,
+                                     to: order.CustomerEmail,
+                                     subject: $"Order placed with Order Id: {randomNumber}",
+                                     body: msgBody);
+                }
+                #endregion 
 
                 HttpContext.Session.Remove("Cart");
 

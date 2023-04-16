@@ -36,7 +36,8 @@ namespace ShoppingCartRepository.Repositories
 
             try
             {
-                Product? find = await (from p in _context.Products where p.Id == model.Id select p).FirstOrDefaultAsync();
+                Product? find = await (from p in _context.Products where p.Id == model.Id                                      
+                                                          select p).FirstOrDefaultAsync();
 
                 if(find != null)
                 {
