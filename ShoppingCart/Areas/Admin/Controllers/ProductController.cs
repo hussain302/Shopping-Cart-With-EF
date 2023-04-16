@@ -68,10 +68,10 @@ namespace ShoppingCart.Areas.Admin.Controllers
             try
             {
                 int res = 0;
-                string folderPath = UploadedFile(model);
+                string folderPath = await UploadedFile(model);
                 model.Product.ImageUrl = folderPath;
 
-                if (model.Product.Id > 0) res = await _unitOfWork.Product.Update(model.Product);
+                if (model.Product.Id > 0) res = await _unitOfWork.Product.UpdateProducts(model.Product);
                 else res = await _unitOfWork.Product.Add(model.Product);
                 
                 if (res == 0) TempData["Error"] = $"{model.Product.Name} - Product didn't updated";
@@ -138,7 +138,7 @@ namespace ShoppingCart.Areas.Admin.Controllers
         }
 
         #region Image Upload Logic
-        private string UploadedFile(ProductViewModel model)
+        private async Task<string> UploadedFile(ProductViewModel model)
         {
             string uniqueFileName = string.Empty;
 
@@ -152,6 +152,12 @@ namespace ShoppingCart.Areas.Admin.Controllers
                     model.PhotoFile.CopyTo(fileStream);
                 }
             }
+            else
+            {
+                var currectProduct = await _unitOfWork.Product.Find(model.Product.Id);
+                uniqueFileName = currectProduct.ImageUrl;
+            }
+
             return uniqueFileName;
         }
         #endregion

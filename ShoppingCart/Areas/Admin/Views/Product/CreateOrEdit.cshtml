@@ -46,8 +46,8 @@
                             </div>
                         </div>
                         <div class="col">
-                            <div class="form-group">                                
-                                <label for="exampleInputPassword1" class="form-label mt-4">Trending</label>  <br />                              
+                            <div class="form-group">
+                                <label for="exampleInputPassword1" class="form-label mt-4">Trending</label>  <br />
                                 <div class="    ">
                                     <label for="exampleInputPassword1" class="form-label mt-4">Yes</label>
                                     <input type="radio" asp-for="Product.IsTrending" value="true">
@@ -69,22 +69,28 @@
                         <div class="col">
                             <div class="form-group">
                                 <label for="exampleInputEmail1" class="form-label mt-4">Sizes</label>
-                                <input type="text" asp-for="Product.Sizes" value="S, M, L, XL" class="form-control" id="exampleInputEmail1"
+                                <input type="text" asp-for="Product.Sizes" class="form-control" id="exampleInputEmail1"
                                        aria-describedby="emailHelp" required="required" placeholder="Enter Product Sizes">
+                                <small> Eg: S, M, L, XL </small>
                             </div>
                         </div>
                     </div>
 
-                    <div class="row">
-                        <div class="col">
-                            <div class="form-group">
-                                <label for="Description" class="form-label mt-4">Description</label>
-                                <textarea rows="3" asp-for="Product.Description "
-                                          class="form-control" id="Description" aria-describedby="emailHelp"
-                                          placeholder="Enter Product Description">
+                    <div class="form-group">
+                        <label for="Description" class="form-label mt-4">Description</label>
+                        <textarea rows="3" asp-for="Product.Description "
+                                  class="form-control" id="Description" aria-describedby="emailHelp"
+                                  placeholder="Enter Product Description">
                         </textarea>
+                    </div>
+
+                    <div class="row mt-4">
+                        @if (Model?.Product?.ImageUrl != null)
+                        {
+                            <div class="col-4">
+                                <img src="~/images/Products/@Model?.Product?.ImageUrl" alt="@Model?.Product?.Name" class="w-100" style="max-width: 200px; max-height: 200px;">
                             </div>
-                        </div>
+                        }
                         <div class="col">
                             <div class="form-group">
                                 <label for="image" class="form-label mt-4">Image</label>

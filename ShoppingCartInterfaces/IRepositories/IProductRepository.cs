@@ -10,5 +10,6 @@ namespace ShoppingCartInterfaces.IRepositories
     public interface IProductRepository : IBaseRepository<Product>
     {
        Task<IEnumerable<Product>> GetProducts();
+       Task<int> UpdateProducts(Product product);
     }
 }
