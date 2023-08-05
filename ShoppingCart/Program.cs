@@ -1,4 +1,3 @@
-using Microsoft.AspNetCore.Authentication.Cookies;
 using Microsoft.EntityFrameworkCore;
 using ShoppingCartDataAccessLayer.ShoppingCartContext;
 using ShoppingCartInterfaces.IUnitOfWork;
